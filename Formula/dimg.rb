@@ -7,11 +7,11 @@ class Dimg < Formula
 
   if OS.mac?
     url "https://github.com/kohbis/dimg/releases/download/v0.0.2/dimg_0.0.2_Darwin_x86_64.tar.gz"
-    sha256 "fdd942ba3386fecd16ab6dc43ca7bfdc43c02c4dc2137ad3c7c64ec6d1c32f5f"
+    sha256 "76123fe050b3f81921e90aa63b23619d6f833dcffa717816b1893f4ff0848430"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/kohbis/dimg/releases/download/v0.0.2/dimg_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "831c118b1c1819c0b065be40e80759b78427f0dd5d04d5f2ff761a66c683bb91"
+      sha256 "fd223505586e5d69f656263313e4a35fdf54f5d580aa9d800e3bab2868df0346"
     end
   end
 
