@@ -1,2 +1,4 @@
 # homebrew-dimg
-brew install dimg
+```bash
+brew install kohbis/dimg/dimg
+```
