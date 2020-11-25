@@ -1,4 +1,3 @@
 # homebrew-dimg
-```bash
-brew install kohbis/dimg/dimg
-```
+
+Homebrew Formula for [dimg](https://github.com/kohbis/dimg)
