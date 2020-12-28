@@ -2,16 +2,16 @@
 class Dimg < Formula
   desc "TUI for docker pull"
   homepage "https://github.com/kohbis/dimg"
-  version "0.0.4"
+  version "0.0.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kohbis/dimg/releases/download/v0.0.4/dimg_0.0.4_Darwin_x86_64.tar.gz"
-    sha256 "6245c6d078f5abbc8637b5b3b1aa84ef4ee9ca80020d6fafa625929bb75ad18b"
+    url "https://github.com/kohbis/dimg/releases/download/v0.0.5/dimg_0.0.5_Darwin_x86_64.tar.gz"
+    sha256 "4d299c9b9d0c811f0a88614e643c307a0e07af721e5099033489347250dc8aa0"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kohbis/dimg/releases/download/v0.0.4/dimg_0.0.4_Linux_x86_64.tar.gz"
-    sha256 "7ecb22801df15b62f497b5b7714e142e4835f9b88ea1e138cfbb938562f1e350"
+    url "https://github.com/kohbis/dimg/releases/download/v0.0.5/dimg_0.0.5_Linux_x86_64.tar.gz"
+    sha256 "0f2535cf4022eca285bef09a004a9fefe179f64a4835d4901267ea921f596568"
   end
 
   def install
