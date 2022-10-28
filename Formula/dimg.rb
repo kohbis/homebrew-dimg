@@ -5,20 +5,20 @@
 class Dimg < Formula
   desc "TUI for docker pull"
   homepage "https://github.com/kohbis/dimg"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kohbis/dimg/releases/download/v0.1.3/dimg_0.1.3_Darwin_x86_64.tar.gz"
-      sha256 "ebf3a909e16f5e7540056100182ae912255537a7ae965be8311024238408dbf9"
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "e3e10298597bf2b43e4c5e75367276750ed14c4fc246f2ffe4024136c18e011e"
 
       def install
         bin.install "dimg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kohbis/dimg/releases/download/v0.1.3/dimg_0.1.3_Darwin_arm64.tar.gz"
-      sha256 "4c8d63807a0549f78a1c5b22dcd5e1443d2beaa523c8f6384599f597ce80caea"
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "2db44dc8426f8f43597a4adff530e23eab29b4f8820d920f911d3bbb857da6ab"
 
       def install
         bin.install "dimg"
@@ -28,16 +28,16 @@ class Dimg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kohbis/dimg/releases/download/v0.1.3/dimg_0.1.3_Linux_arm64.tar.gz"
-      sha256 "af1bcfe1f6f4fef9243afd3259a8a45de7edc985d479e39f9e2614904b88bba1"
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Linux_arm64.tar.gz"
+      sha256 "827104b1bcadb1833f493d4620b8e42674e1e9b52ff3618147256cb79793e60c"
 
       def install
         bin.install "dimg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kohbis/dimg/releases/download/v0.1.3/dimg_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "eb9d69be041afe99d8dd1292e36d988b95283c96b56fd09514fbcc12782156f1"
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "07e6ab58f19fbe08da924b9e54a9cd6e38a5c033cc61b6539336234d6a995b48"
 
       def install
         bin.install "dimg"
