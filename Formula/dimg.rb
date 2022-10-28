@@ -5,20 +5,20 @@
 class Dimg < Formula
   desc "TUI for docker pull"
   homepage "https://github.com/kohbis/dimg"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "e3e10298597bf2b43e4c5e75367276750ed14c4fc246f2ffe4024136c18e011e"
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.1/dimg_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "c9170111ac7593dc8156c6b8a52747ded68547a87a0cf49d29374cd1cf2befd6"
 
       def install
         bin.install "dimg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "2db44dc8426f8f43597a4adff530e23eab29b4f8820d920f911d3bbb857da6ab"
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.1/dimg_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "17246923b87b24a16ce64d498e2beb5c6ed22259ff2a3d844cfac30e5bab2a54"
 
       def install
         bin.install "dimg"
@@ -27,17 +27,17 @@ class Dimg < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Linux_arm64.tar.gz"
-      sha256 "827104b1bcadb1833f493d4620b8e42674e1e9b52ff3618147256cb79793e60c"
+    if Hardware::CPU.intel?
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.1/dimg_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "228b036bb919fad684b01ab89c2e98ff72dae93617218246ea8b797e93c4a671"
 
       def install
         bin.install "dimg"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kohbis/dimg/releases/download/v0.2.0/dimg_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "07e6ab58f19fbe08da924b9e54a9cd6e38a5c033cc61b6539336234d6a995b48"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kohbis/dimg/releases/download/v0.2.1/dimg_0.2.1_Linux_arm64.tar.gz"
+      sha256 "e06d830700e622ac89b9bfee33f5947b5fc8e8a309101d228f8b4c98f3646fbf"
 
       def install
         bin.install "dimg"
